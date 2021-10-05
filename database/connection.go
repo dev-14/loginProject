@@ -11,7 +11,7 @@ import (
 var DB *gorm.DB
 
 func Connect() {
-	database := fmt.Sprintf("host=localhost port=5432 user=postgres dbname=loginproject password=admin sslmode=disable")
+	database := fmt.Sprintf("host=localhost port=5432 user=postgres dbname=loginproject password= insertPasswordHere sslmode=disable")
 	fmt.Println("conname is\t", database)
 	connection, err := gorm.Open("postgres", database)
 	if err != nil {
